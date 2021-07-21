@@ -1,12 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    SONAR_LOGIN: 25e8d4930022a117d614bc2ae429d536d627e42d
-    SONAR_HOST: https://sonarcloud.io/
-    SONAR_ORGANIZATION: 375291601334
-    SONAR_PROJECT: 375291601334_Quote-App-client
-
 phases:
   install:
     runtime-versions:
@@ -31,12 +24,13 @@ phases:
 
       # Sonar cloud checks
       - echo Running Sonar cloud checks...
-      - sonar-scanner -Dsonar.login=$SONAR_LOGIN -Dsonar.host.url=$SONAR_HOST -Dsonar.projectKey=$SONAR_PROJECT -Dsonar.organization=$SONAR_ORGANIZATION
+      - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.host.url=$SONAR_HOST -Dsonar.projectKey=$SONAR_PROJECT -Dsonar.organization=$SONAR_ORGANIZATION
       - sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$SONAR_PROJECT >result.json
       - cat result.json
       - if [ $(jq -r '.projectStatus.status' result.json) = ERROR ] ; then $CODEBUILD_BUILD_SUCCEEDING -eq 0 ;fi
 
+      - npm run build -- --configuration=${BUILD_ENV}
 cache:
   paths:
     - '/**/*'

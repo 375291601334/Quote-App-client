@@ -1,10 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    BUILD_ENV: "production"
-    S3_BUCKET: "quote-app-client"
-
 phases:
   install:
     runtime-versions:
