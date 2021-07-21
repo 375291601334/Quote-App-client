@@ -7,7 +7,13 @@ env:
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 12.x
+
     commands:
+      # Update packages.
+      - apt-get update -y -q
+
       # Install @angular/cli and app dependencies.
       - echo Installing source NPM dependencies...
       - npm install -g @angular/cli
