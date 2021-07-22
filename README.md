@@ -1,9 +1,19 @@
 # QuoteApp
 
-[![DeepScan grade](https://deepscan.io/api/teams/7984/projects/10118/branches/135987/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=7984&pid=10118&bid=135987)
-[![Known Vulnerabilities](https://snyk.io/test/github/boale/ngQuote/badge.svg?targetFile=package.json)](https://snyk.io/test/github/boale/ngQuote?targetFile=package.json)
-[![Maintainability](https://api.codeclimate.com/v1/badges/28cd30bed8aafba2330d/maintainability)](https://codeclimate.com/github/boale/ngQuote/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/28cd30bed8aafba2330d/test_coverage)](https://codeclimate.com/github/boale/ngQuote/test_coverage)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=375291601334_Quote-App-client)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=bugs)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=code_smells)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=sqale_index)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=coverage)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=375291601334_Quote-App-client&metric=security_rating)](https://sonarcloud.io/dashboard?id=375291601334_Quote-App-client)
+
 
 Angular-based Quote generator with all necessary CI/CD configurations and integrations. 
 
